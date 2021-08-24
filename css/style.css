@@ -41,7 +41,7 @@ header nav ul li
     width: 25%;
     height: 80px;
     text-align: center;
-    line-height: 80px;
+    /*line-height: 80px;*/
 }
 header nav ul li a
 {
