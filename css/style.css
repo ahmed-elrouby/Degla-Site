@@ -1,0 +1,460 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+main
+{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+/************** Header **************/
+
+header
+{
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    background: linear-gradient(0deg,rgb(20,20,20),rgb(100,100,100));
+    justify-content: space-between;
+    position: fixed;
+    flex-wrap: wrap;
+    z-index: 5;
+}
+header nav
+{
+    width: max(400px,40%);
+    height: 80px;
+}
+header nav ul
+{
+    list-style: none;
+    display: flex;
+    height: 80px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header nav ul li
+{
+    font-size: max(12px,1.1vw);
+    width: 25%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+header nav ul li a
+{
+    text-decoration: none;
+    color: rgb(255, 255,255);
+}
+header img
+{
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+/************** Header **************/
+
+/************** Section1 **************/
+.sec1
+{
+    position: relative;
+    display: flex;
+    margin-top: 80px;
+    width: 100%;
+    min-height: 500px;
+    background-size: 100% 100%;
+    background-color: yellow;
+}
+.sec1 img
+{
+    width: 100%;
+    height: 100%;
+    clip-path: circle(60% at 50% 10%);
+}
+.search
+{
+    position: fixed;
+    background-color: black;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    top: 200px;
+    border-radius: 10px;
+    justify-self: right;
+    left: -150px;
+    z-index: 2;
+}
+.search img
+{
+    display: block;
+    width:50px;
+    height: 30px;
+    margin-left: 145px;
+    margin-top: 10px;
+}
+.search:hover
+{
+    left: 0px;
+}
+.search:hover img
+{
+    margin-left: 75px;
+}
+/************** Section1 **************/
+
+/************** Section2 **************/
+.sec2
+{
+    display: flex;
+    position: relative;;
+    width: 80%;
+    min-height: 150px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    margin: auto;
+    margin-top: -80px;
+}
+.sec2>div
+{
+    width:250px;
+    height: 200px;
+    background: url(../images/tennisacademy.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+.sec2>div img
+{
+    width: 250px;
+    height: 100;
+    margin-top: 50px;
+}
+.sec2 div .animation
+{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+    clip-path: circle(0 at 0 0);
+}
+.sec2 div:hover .animation
+{
+    background-color: #ff0b;
+    clip-path: circle(75% at 0 15%);
+}
+/************** Section2 **************/
+
+/************** Section3 **************/
+.sec3
+{
+    width: 100%;
+    min-height: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.sec3 aside:first-of-type
+{
+    width: 100%;
+    height: 100px;
+}
+.sec3 aside>h1
+{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    line-height: 80px;
+    font-size: max(20px,3vw);
+    font-family: sans-serif;
+    color: rgb(67,76,155);
+}
+.sec3 aside>hr
+{
+    width: 50%;
+    margin: auto;
+    color: rgb(154, 154, 154);
+    
+}
+.sec3 aside+aside
+{
+    width:500px;
+    min-height: 200px;
+}
+.sec3 aside:nth-of-type(2)
+{
+    color: rgb(66, 77, 155);
+    font-size: max(16px,2vw);
+    font-family: sans-serif;
+}
+.sec3 aside:nth-of-type(2) p
+{
+
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    
+}
+.sec3 aside:nth-of-type(3)
+{
+    background-image: url(../images/about.jpg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: 100% 100%;
+}
+.sec3 aside:nth-of-type(3) div
+{
+    width: 100%;
+    height: 100%;
+    clip-path: circle(25% at 50% 50%);
+    transition: all 2s;
+    
+}
+.sec3 aside:nth-of-type(3):hover div
+{
+    clip-path: circle(100% at 50% 50%);
+    background-color: #8888;
+}
+
+/************** Section3 **************/
+
+/************** Section4 **************/
+.sec4
+{
+    width: 100%;
+    min-height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.sec4 aside:first-of-type
+{
+    width: 100%;
+    height: 100px;
+}
+.sec4 aside>h1
+{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    line-height: 80px;
+    font-size: max(20px,3vw);
+    font-family: sans-serif;
+    color: rgb(67,76,155);
+}
+.sec4 aside>hr
+{
+    width: 50%;
+    margin: auto;
+    color: rgb(154, 154, 154);
+    
+}
+
+.sec4 aside+aside
+{
+    width:100%;
+    min-height: 300px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.sec4 aside table
+{
+    width: 100%;
+    min-height: 300px;
+}
+.sec4 aside>table tr
+{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.sec4 aside>table tr:nth-of-type(even)
+{
+    background-color: rgb(204, 204, 204);
+}
+.sec4 aside>table tr td
+{
+    width: 300px;
+    text-align: center;
+    min-height: 40px;
+    line-height: 40px;
+}
+
+/************** Section4 **************/
+
+/************** Section5 **************/
+.sec5
+{
+    width: 75%;
+    min-height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.sec5 aside:first-of-type
+{
+    width: 100%;
+    height: 100px;
+}
+.sec5 aside>h1
+{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    line-height: 80px;
+    font-size: max(20px,3vw);
+    font-family: sans-serif;
+    color: rgb(67,76,155);
+}
+.sec5 aside>hr
+{
+    width: 50%;
+    margin: auto;
+    color: rgb(154, 154, 154);
+    
+}
+
+.sec5 aside+aside
+{
+    width:300px;
+    min-height: 300px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+
+}
+.sec5 aside img
+{
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.sec5 aside h4
+{
+    box-sizing: border-box;
+    padding: 5px;
+}
+.sec5 aside p
+{
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/************** Section5 **************/
+
+/************** Section6 **************/
+.sec6
+{
+    width: 75%;
+    min-height: 300px;
+    background-color: yellow;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+
+}
+.sec6 aside
+{
+    margin: 2.5px 10px;
+    width:450px;
+    height: 280px;
+}
+.sec6 aside img
+{
+    width: 100%;
+    height: 100%;
+}
+/************** Section6 **************/
+
+/************** Section7 **************/
+.sec7
+{
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+}
+.sec7 map
+{
+    display: block;
+    width: 100%;
+    height:100%;
+    padding: 0;
+    margin: 0;
+}
+/************** Section7 **************/
+
+/************** section 2 Form **************/
+.reform
+{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+}
+.reform legend
+{
+    font-size: 24px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.reform form
+{
+    width: 80%;
+    text-align: center;
+    margin:auto;
+}
+.reform form fieldset
+{
+    background:linear-gradient(0deg,#ffa,#ff0);
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.reform form fieldset label
+{
+    padding: 10px;
+}
+/************** section 2 Form **************/
+
+/************** Footer **************/
+footer
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+}
+footer marquee
+{
+    line-height: 50px;
+    color: white;
+}
+/************** Footer **************/
